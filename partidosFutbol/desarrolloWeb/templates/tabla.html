@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Ejemplo
+{% endblock %}
+
+{% block encabezado %}
+{{ block.super }}
+Tabla de partidos jornada 17
+{% endblock %}
+
+{% block contenido %}
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th>Equipo local</th>
+      <th>Equipo visitante</th>
+      <th>Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pachuca</td>
+      <td>América</td>
+      <td>1-2</td>
+    </tr>
+    <tr>
+      <td>Juárez</td>
+      <td>Pumas</td>
+      <td>3-1</td>
+    </tr>
+    <tr>
+      <td>Monterrey</td>
+      <td>Pachuca</td>
+      <td>0-0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+{% endblock %}

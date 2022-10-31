@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Ejemplo
+{% endblock %}
+
+{% block encabezado %}
+{{ block.super }}
+Lista de los equipos
+{% endblock %}
+
+{% block contenido %}
+<div class="container mt-3">
+  {% if elementos %}
+  <h2>Equipos ⚽:</h2>
+  <ul class="list-group list-group-flush"> 
+      {% for nombre in elementos %}
+        <li class="list-group-item">{{ nombre }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock %}
